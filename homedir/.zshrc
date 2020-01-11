@@ -15,7 +15,7 @@ POWERLEVEL9K_SHOW_CHANGESET=true
 #export ZSH_THEME="random"
 
 # Set to this to use case-sensitive completion
-export CASE_SENSITIVE="true"
+# export CASE_SENSITIVE="true"
 
 # disable weekly auto-update checks
 # export DISABLE_AUTO_UPDATE="true"
@@ -26,9 +26,11 @@ export CASE_SENSITIVE="true"
 # disable autosetting terminal title.
 export DISABLE_AUTO_TITLE="true"
 
+export COMPLETION_WAITING_DOTS="true"
+
 # Which plugins would you like to load? (plugins can be found in ~/.dotfiles/oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colorize compleat dirpersist autojump git gulp history cp)
+plugins=(colorize compleat git bundler rails)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,5 +39,15 @@ autoload -U add-zsh-hook
 # Customize to your needs...
 unsetopt correct
 
-# run fortune on new terminal :)
-# fortune
+alias l="ls -hal"
+alias cd..="cd .."
+alias t="tail -f"
+alias wttr="curl wttr.in/Florence,+Italy"
+alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
+
+function ytdl() {
+  youtube-dl -x -f bestaudio "$@"
+}
+
+eval "$(rbenv init -)"
+eval "$(nodenv init -)"
