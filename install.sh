@@ -703,8 +703,8 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop";ok
 running "Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)"
 defaults write com.apple.screencapture type -string "png";ok
 
-running "Disable shadow in screenshots"
-defaults write com.apple.screencapture disable-shadow -bool true;ok
+# running "Disable shadow in screenshots"
+# defaults write com.apple.screencapture disable-shadow -bool true;ok
 
 running "Enable subpixel font rendering on non-Apple LCDs"
 defaults write NSGlobalDomain AppleFontSmoothing -int 2;ok
