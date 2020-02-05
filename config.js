@@ -9,7 +9,7 @@ module.exports = {
     'docker', // docker for mac
     'dropbox',
     'iterm2',
-    'sizeup',
+    'rectangle',
     'the-unarchiver',
     'visual-studio-code',
     'skype',
